@@ -1,4 +1,4 @@
-= Moire Numbers
+# Moire Numbers
 
 A demo of an idea I had to display numbers while scrolling. It uses fixed vertical lines to white out certain pixel columns of bg.png which is a 7 segment display number that allows each segment to be turned on and off by blanking out some vertical columns.
 
