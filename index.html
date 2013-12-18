@@ -1,0 +1,104 @@
+<!doctype html>
+<meta name="viewport" content="initial-scale=1">
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 6000px;
+}
+body.i-can-see-clearly-now-the-rain-is-gone {
+  background-color: #A3A3A3;
+}
+
+.how-the {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+.git-me {
+  position: fixed;
+  right: 10px;
+  top: 60px;
+}
+
+.fixed, .num {
+  background-size: 46px auto;
+  height: 100%;
+  left: 200px;
+  top: 0;
+  width: 200px;
+}
+
+.num {
+  background-repeat: repeat-y;
+  height: 400px;
+  position: relative;
+}
+
+.num0 { background-image: url('0.png'); }
+.num1 { background-image: url('1.png'); }
+.num2 { background-image: url('2.png'); }
+.num3 { background-image: url('3.png'); }
+.num4 { background-image: url('4.png'); }
+.num5 { background-image: url('5.png'); }
+.num6 { background-image: url('6.png'); }
+.num7 { background-image: url('7.png'); }
+.num9 { background-image: url('9.png'); }
+
+.fixed {
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .num0 { background-image: url('0-2x.png'); }
+  .num1 { background-image: url('1-2x.png'); }
+  .num2 { background-image: url('2-2x.png'); }
+  .num3 { background-image: url('3-2x.png'); }
+  .num4 { background-image: url('4-2x.png'); }
+  .num5 { background-image: url('5-2x.png'); }
+  .num6 { background-image: url('6-2x.png'); }
+  .num7 { background-image: url('7-2x.png'); }
+  .num9 { background-image: url('9-2x.png'); }
+
+  .fixed {
+    background-image: url('bg-2x.png');
+  }
+}
+
+
+</style>
+<body>
+  <div class="fixed"></div>
+  <div class="num num0"></div>
+  <div class="num num1"></div>
+  <div class="num num2"></div>
+  <div class="num num3"></div>
+  <div class="num num4"></div>
+  <div class="num num5"></div>
+  <div class="num num6"></div>
+  <div class="num num7"></div>
+  <div class="num num8"></div>
+  <div class="num num9"></div>
+
+  <button class="how-the">How did you just?!</button>
+  <a href="https://github.com/Rob-ot/moire-numbers" class="git-me">View on GitHub</a>
+
+  <script>
+  var btn = document.querySelector(".how-the")
+  btn.addEventListener("click", function () {
+    if (document.body.classList.toggle("i-can-see-clearly-now-the-rain-is-gone")) {
+      btn.innerHTML = "Oh I see, how you were"
+    }
+    else {
+      btn.innerHTML = "Wait dim it one more time"
+    }
+  }, false)
+  </script>
+</body>
+
